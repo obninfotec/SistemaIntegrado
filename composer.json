@@ -1,0 +1,13 @@
+{
+    "name": "obn2000/usando-drouter",
+    "description": "Projeto inicial usando o Drouter de Lukas Silva",
+    "authors": [
+        {
+            "name": "Osvaldo Bodo",
+            "email": "osvabnaston@gmail.com"
+        }
+    ],
+    "require": {
+        "lukasdev/drouter":"^2.4"
+    }
+}
