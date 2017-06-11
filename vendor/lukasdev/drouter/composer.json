@@ -1,0 +1,25 @@
+{
+    "name": "lukasdev/drouter",
+    "description": "Um sistema simplista de roteamento, com o intuito de ser utilizado em aplicacoes web pequenas e webservices REST",
+    "keywords": ["router", "REST", "microframework", "api"],
+    "homepage": "https://github.com/lukasdev/DRouter",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Lucas Silva",
+            "email": "dev.lucassilva@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "support": {
+        "email": "dev.lucassilva@gmail.com"
+    },
+    "require": {
+        "php": ">=5.4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "DRouter\\": "src/"
+        }
+    }
+}

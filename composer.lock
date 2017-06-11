@@ -1,0 +1,62 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "a11fefc56639a6bb39ce3557b1fe6e22",
+    "packages": [
+        {
+            "name": "lukasdev/drouter",
+            "version": "2.4.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lukasdev/DRouter.git",
+                "reference": "d20ee50428cc6590a2da9a2198a708fb548f8c57"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lukasdev/DRouter/zipball/d20ee50428cc6590a2da9a2198a708fb548f8c57",
+                "reference": "d20ee50428cc6590a2da9a2198a708fb548f8c57",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "DRouter\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Lucas Silva",
+                    "email": "dev.lucassilva@gmail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Um sistema simplista de roteamento, com o intuito de ser utilizado em aplicacoes web pequenas e webservices REST",
+            "homepage": "https://github.com/lukasdev/DRouter",
+            "keywords": [
+                "api",
+                "microframework",
+                "rest",
+                "router"
+            ],
+            "time": "2017-01-02T14:56:04+00:00"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}
