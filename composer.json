@@ -8,6 +8,6 @@
         }
     ],
     "require": {
-        "lukasdev/drouter":"^2.4"
+        "lukasdev/drouter": "^2.4"
     }
 }
