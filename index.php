@@ -14,7 +14,18 @@ $app->get('/', function(){
 });
 
 $app->get('/contato', function(){
-    echo 'Estou no contato';
+    echo '<form action="" method="post">';
+    echo '<input type="text" name="titulo" placeholder="titulo" /><br />';
+    echo '<input type="text" name="valor" placeholder="valor" /><br />';
+    echo '<input type="submit" value="Enviar" />';
+    echo '</form>';
+});
+
+$app->post('/contato', function(){
+    $request = $_POST;
+    print_r($request);
 });
 
 $app->run();
+
+
