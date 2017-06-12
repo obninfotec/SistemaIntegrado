@@ -10,10 +10,10 @@ require 'vendor/autoload.php';
 $app = new DRouter\App();
 
 $app->get('/', function(){
-    echo 'Estou na Home';
+    echo 'Estou aqui, na Home';
 });
 
-$app->get('/contato', function(){
+$app->get('/contato/', function(){
     echo '<form action="" method="post">';
     echo '<input type="text" name="titulo" placeholder="titulo" /><br />';
     echo '<input type="text" name="valor" placeholder="valor" /><br />';
