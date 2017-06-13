@@ -1,6 +1,4 @@
 RewriteEngine On
-# RewriteBase /drouter/
 RewriteCond %{SCRIPT_FILENAME} !-f
 RewriteCond %{SCRIPT_FILENAME} !-d
-# RewriteRule ^(.*)$ index.php/$1 [QSA,L]
-RewriteRule ^ index.php [QSA,L]
+RewriteRule ^(.*)$ index.php/$1 [QSA,L]
