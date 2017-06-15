@@ -18,16 +18,13 @@ $app->get('/single/:slug', function($slug){
     echo 'Estou na página single do post <br />';
     echo 'O Slug é : <b>'.$slug.'</b>';
     
-    echo '<form action="" method="post">'
-    . '<input type="text" name="nome" placeholder="nome" /><br /><textarea '
-    . 'name="comentario"></textarea><br /><input type="submit" value'
-    . '="Enviar" /></form>';
-	    
+    echo '<form action="" method="post">'.'<input type="text" name="nome" placeholder="nome" /><br />'
+	.'<textarea name="comentario"></textarea><br /><input type="submit" value="Enviar" />'
+	.'</form>';
 })->setName('single-post');
 
 $app->post('/single/:slug', function($slug){
     $post = $this->request->getParsedBody();
-    
     //Cadastro do comentário do usuario
     if(true){
 	$this->router->redirectTo('single-post', [
@@ -50,7 +47,6 @@ $app->get('/perfil/:id', function($id){
     $usuario->execute([$id]);
     $usuario = $usuario->fetch();
     // print_r($usuario);
-    
     $args = func_get_args();
     
     if(count($args) > 1 && $args[1] == 'system'){
@@ -59,7 +55,6 @@ $app->get('/perfil/:id', function($id){
 	echo '<h1>'.$usuario['nome'].'</h1>';
 	echo '<p>'.$usuario['email'].'</p>';
     }
-  
 })->setName('perfil-usuario');
 
 $app->get('/admin/editar-usuario/:id', function($id){
@@ -70,5 +65,3 @@ $app->get('/admin/editar-usuario/:id', function($id){
 });
 
 $app->run();
-
-
